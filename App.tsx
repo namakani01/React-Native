@@ -33,21 +33,26 @@ import {Sample2, s} from './src/component/sample2';
 import Statusbar from './src/component/statusbar';
 import {Swi, stm} from './src/component/switch';
 import {Flex, t} from './src/component/flex';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { App1} from './src/component/Navigation';
-import { App2 } from './src/component/Tabnavigation';
-import { KeyAvoidingView } from './src/component/KeyboardavoidingView';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {App1} from './src/component/Navigation';
+import {App2} from './src/component/Tabnavigation';
+import {KeyAvoidingView} from './src/component/KeyboardavoidingView';
 import Effect from './src/component/UseEffect Hooks';
-import { Component1,Component2 } from './src/component/prop';
-import { App3 ,A1,A2} from './src/component/UseEffectCleanUp';
+import {Component1, Component2} from './src/component/prop';
+import {App3, A1, A2} from './src/component/UseEffectCleanUp';
 import Reff from './src/component/Useref';
 import Example from './src/component/useref example';
 import Form from './src/component/Form';
 import Dropdown from './src/component/Dropdown';
 import Practise from './src/component/practise';
-
-
+import UseMemo from './src/component/useMemo';
+import UseContext from './src/component/useContext';
+import Themecontext from './src/component/Theme';
+import Theme from './src/component/Theme';
+import Debounce from './src/component/Debounce';
+import Debounce1 from './src/component/Debounce1';
+import Demo from './src/component/Demo';
 
 const App = () => {
   return (
@@ -99,34 +104,41 @@ const App = () => {
     //   <Model></Model>
 
     //   <Flex></Flex>
-    
+
     // </ScrollView>
 
     // <Component1></Component1>
 
     // <App1></App1>
 
-      // <App2></App2>
+    // <App2></App2>
 
-//  <Effect></Effect> 
+    //  <Effect></Effect>
 
- // <App3></App3>
+    // <App3></App3>
 
-//  <Reff></Reff>
+    //  <Reff></Reff>
 
-// <Example></Example> 
+    // <Example></Example>
 
-     <Form></Form>
-    
-//  <Dropdown></Dropdown> 
+    //  <Form></Form>
 
+    //  <Dropdown></Dropdown>
 
+    //  <Practise></Practise>
 
-//  <Practise></Practise> 
+    // <UseMemo></UseMemo>
 
-  
+    // <UseContext></UseContext>
+
+    // <Theme></Theme>
+
+    // <Debounce></Debounce>
+
+    // <Debounce1></Debounce1>
+
+    <Demo></Demo>
   );
 };
-
 
 export default App;

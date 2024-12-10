@@ -2,12 +2,15 @@ import React, {useEffect, useRef} from 'react';
 import {View, TextInput, Button, StyleSheet, Text} from 'react-native';
 
 const Reff = () => {
-  const inputRef = useRef('');
+  const inputRef = useRef('');     
+
+
+  // console.log(">>>",inputRef)      //  {current : ''}
 
   const abc = () => {
     inputRef.current.focus();
     inputRef.current.setNativeProps({
-      color : 'red'
+      borderColor : 'red'
     })
   };
 

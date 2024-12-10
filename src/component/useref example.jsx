@@ -4,14 +4,14 @@ import {View, Text,StyleSheet, TextInput } from "react-native";
 
 const Example = ()=>
 {
-    const[inputvalue , setInputvalue] = useState("abc")
+    const[inputvalue , setInputvalue] = useState("")
 
-    const inputRef = useRef("");
+    const inputRef = useRef(null);
 
-    useEffect(()=>
-    {
-        inputRef.current  = inputvalue;
-    })
+    
+    useEffect(() => {
+        inputRef.current = inputvalue;
+      }, [inputvalue]);
 
 
     return(
